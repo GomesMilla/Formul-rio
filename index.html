@@ -3,106 +3,115 @@
 <html lang="en">
 <!--Linguagem do código/programa/sistema-->
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="config.css" media="screen">
-    <title>Cadastro</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="config.css" media="screen">
+        <title>Cadastro</title>
+    </head>
 
-<body>
-    <div>
-        <h1 id="titulo">Cadastro de programadoras</h1>
-        <p id="subtitulo"><strong>Complete com suas informações!</strong></p>
-        <br>
-    </div>
-    <div class="row">
-        <div class="edit-text col s8">
-            <p>Voce sabia?</p>
-            Sabe quem é a mulher ao lado? Ada Lovelace a primeira programadora do mundo! Isso mesmo! Foi uma mulher que estreiou o mundo da programação.
-        </div>
-        <div class="edit-image col s4">
-            <img src="Ada.jpg" width="350" height="200" class="responsive-img circle">
-        </div>
-
-        <form>
-            <!--Indica onde inicia o formulário!-->
-
-            <div class="grupo">
-                <div>
-                    <label for="nome"><strong>Nome:</strong></label>
-                    <input type="text" nome="nome" id="nome" placeholder="Ada" required>
-                    <label for="sobrenome"><strong>Sobrenome:</strong></label>
-                    <input type="text" nome="sobrenome" id="sobrenome" placeholder="Lovelace" required>
+    <body>
+        
+        <main>
+            <div>
+                <h1 id="titulo">Cadastro de programadoras</h1>
+                <p id="subtitulo"><strong>Complete com suas informações!</strong></p>
+                <br>
+            </div>
+            <div class="row">
+                <div class="edit-text col s8">
+                    <p>Voce sabia?</p>
+                    Sabe quem é a mulher ao lado? Ada Lovelace a primeira programadora do mundo! Isso mesmo! Foi uma mulher que estreiou o mundo da programação.
                 </div>
-                <div>
+                
+                <form>
+                    <!--Indica onde inicia o formulário!-->
+                    <div class="grupo">
+                        <div>
+                            <label for="nome"><strong>Nome:</strong></label>
+                            <input type="text" nome="nome" id="nome" placeholder="Ada" required>
+                            <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                            <input type="text" nome="sobrenome" id="sobrenome" placeholder="Lovelace" required>
+                        </div>
+                        <div>
+                            <br>
+                            <label for="Email"><strong>Email:</strong></label>
+                            <input type="Email" nome="Email" id="Email" placeholder="Ada.lovelace@gmail.com" required>
+                        </div>
+                    </div>
+        
+                    <div class="campo"><br>
+                    <label>
+                        <strong>Qual sua area de interesse?</strong>
+                    </label>
+        
+                    <label>
+                        <input type="radio" nome ="devweb" value="frontend" checked>Front-end
+                    </label>
+
+                    <label>
+                        <input type="radio" nome ="devweb" value="backend">Back-end
+                    </label>
+        
+                    <label>
+                        <input type="radio" nome ="devweb" value="fullstack">Fullstack
+                    </label>
+                        <label>
+                        <input type="radio" nome ="devweb" value="mobile">Mobile
+                    </label>
+                    </div>
+                    <div class="campo">
+                        <label class="experiencia">
+                            <strong>Nivel de experiência baseado em tempo de estudo e trabalho:</strong>
+                        </label>
+                        <select id="experiencia">
+                            <option selected disabled "">Selecione</option>
+                            <option>Iniciante</option>
+                            <option>Basico(1-5 anos)</option>
+                            <option>Intermediário(5-10 anos)</option>
+                            <option>Avançado(+10 anos)</option>
+                        </select>
+                        <br>
+                    </div>
+        
+                    <!-- <fieldset class="grupo"> -->
+                    <div class="grupo">
+                        <label>
+                            <strong>Tecnologias de interesse:</strong>
+                        </label><br>
+                        <input type="checkbox" nome="tecnologia1" id="teconologia1" valor="HTML">
+                        <label for="tecnologia1">HTML</label>
+                        <input type="checkbox" nome="tecnologia2" id="teconologia2" valor="CSS">
+                        <label for="tecnologia2">CSS</label>
+                        <input type="checkbox" nome="tecnologia3" id="teconologia3" valor="JavaScript">
+                        <label for="tecnologia3">JavaScript</label>
+                        <input type="checkbox" nome="tecnologia4" id="teconologia4" valor="Python">
+                        <label for="tecnologia4">Python</label>
+                        <input type="checkbox" nome="tecnologia5" id="teconologia5" valor="Java">
+                        <label for="tecnologia5">Java</label>
+                        <input type="checkbox" nome="tecnologia6" id="teconologia6" valor="C++">
+                        <label for="tecnologia6">C++</label>
+                        <input type="checkbox" nome="tecnologia7" id="teconologia7" valor="Framework">
+                        <label for="tecnologia7">Framework</label>
+                        <input type="checkbox" nome="tecnologia8" id="teconologia8" valor="sem conhecimento">
+                        <label for="tecnologia8">Confusa</label>
+                    </div>
+                    <!-- </fieldset> -->
                     <br>
-                    <label for="Email"><strong>Email:</strong></label>
-                    <input type="Email" nome="Email" id="Email" placeholder="Ada.lovelace@gmail.com" required>
+                    <button type="submit" class="button">Concluído</button>
+                </form>
+        </main>
+
+        <aside>
+            <div class="position-left">
+                <div class="container">
+                    <figure>
+                        <img src="Ada.jpg" width="350" height="200" class="responsive-img circle">
+                    </figure>
                 </div>
             </div>
-
-            <div class="campo">
-                <br>
-                <label><strong>Qual sua area de interesse?</strong></label>
-
-                <label>
-                <input type="radio" nome ="devweb" value="frontend" checked>Front-end
-            </label>
-
-                <label>
-                <input type="radio" nome ="devweb" value="backend">Back-end
-            </label>
-
-                <label>
-                <input type="radio" nome ="devweb" value="fullstack">Fullstack
-            </label>
-                <label>
-                <input type="radio" nome ="devweb" value="mobile">Mobile
-            </label>
-            </div>
-            <div class="campo">
-                <label class="experiencia"><strong>Nivel de experiência baseado em tempo de estudo e trabalho:</strong></label>
-                <select id="experiencia">
-                     <option selected disabled "">Selecione</option>
-                     <option>Iniciante</option>
-                     <option>Basico(1-5 anos)</option>
-                     <option>Intermediário(5-10 anos)</option>
-                     <option>Avançado(+10 anos)</option>
-                </select>
-                <br>
-            </div>
-
-            <!-- <fieldset class="grupo"> -->
-            <div class="grupo">
-                <label><strong>Tecnologias de interesse:</strong></label>
-                <br>
-
-                <input type="checkbox" nome="tecnologia1" id="teconologia1" valor="HTML">
-                <label for="tecnologia1">HTML</label>
-                <input type="checkbox" nome="tecnologia2" id="teconologia2" valor="CSS">
-                <label for="tecnologia2">CSS</label>
-                <input type="checkbox" nome="tecnologia3" id="teconologia3" valor="JavaScript">
-                <label for="tecnologia3">JavaScript</label>
-                <input type="checkbox" nome="tecnologia4" id="teconologia4" valor="Python">
-                <label for="tecnologia4">Python</label>
-                <input type="checkbox" nome="tecnologia5" id="teconologia5" valor="Java">
-                <label for="tecnologia5">Java</label>
-                <input type="checkbox" nome="tecnologia6" id="teconologia6" valor="C++">
-                <label for="tecnologia6">C++</label>
-                <input type="checkbox" nome="tecnologia7" id="teconologia7" valor="Framework">
-                <label for="tecnologia7">Framework</label>
-                <input type="checkbox" nome="tecnologia8" id="teconologia8" valor="sem conhecimento">
-                <label for="tecnologia8">Confusa</label>
-            </div>
-            <!-- </fieldset> -->
-            <br>
-
-            <button type="submit" class="button">Concluído</button>
-
-
-        </form>
-</body>
+        </aside>
+    </body>
 
 </html>
